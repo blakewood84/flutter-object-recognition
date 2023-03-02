@@ -1,0 +1,27 @@
+name: object_recognition
+description: A new Flutter project.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.2 <3.0.0"
+dependencies:
+  camera: ^0.9.4+5
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_camera_plugin: ^0.0.5
+  tflite_flutter: ^0.9.0
+  tflite_flutter_helper: ^0.3.1
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/detect.tflite
+    - assets/labelmap.txt
